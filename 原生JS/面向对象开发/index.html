@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div
+      class="wrap"
+      data-config='{
+      "plusBtn":"j-plus-btn",
+      "inputWrap":"input-wrap",
+      "addBtn":"j-add-item",
+      "list":"j-list",
+      "itemClass":"item"
+    }'
+    >
+      <div class="list-hd">
+        <h2>ToDoList</h2>
+        <a href="javascript:;" class="j-plus-btn fa fa-plus"></a>
+      </div>
+      <div class="input-wrap">
+        <div class="input-bd">
+          <input type="text" class="content" />
+        </div>
+        <div class="btn-bd">
+          <button class="j-add-item">增加项目</button>
+        </div>
+      </div>
+      <div class="list-wrap">
+        <ul class="j-list list"></ul>
+      </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
